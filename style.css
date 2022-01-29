@@ -1,0 +1,194 @@
+body {
+	background-color: #f5f5f5;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: "Varela Round", sans-serif;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 45em;
+	padding: 30px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	border-radius: 7px;
+	margin-top: 50px;
+}
+
+.header {
+	width: 100%;
+	text-align: center;
+	padding: 30px;
+	margin-top: -30px;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	background: linear-gradient(90deg, #0088ff, #0068c3);
+}
+
+.todo-input {
+	width: 65%;
+	height: 24px;
+	margin-right: 20px;
+	border-radius: 7px;
+	border: none;
+	padding: 5px 15px;
+}
+
+.todo-input:hover {
+	background-color: #eee;
+}
+
+.header button {
+	height: 30px;
+	padding: 5px 20px;
+	height: 34px;
+	border-radius: 7px;
+	border: none;
+}
+
+.add-btn:hover {
+	background-color: #d3d3d3;
+}
+
+.add-btn:active {
+	background-color: #b1b1b1;
+}
+
+.toDoList {
+	text-align: center;
+	width: 100%;
+}
+
+.toDoList h2 {
+	margin-bottom: 0px;
+}
+
+.toDoList p {
+	margin-top: 15px;
+}
+
+ul,
+li {
+	display: flex;
+}
+
+ul {
+	flex-direction: column;
+	padding: 0;
+	width: 90%;
+	margin: 0 auto;
+}
+
+li {
+	justify-content: space-between;
+	align-items: center;
+	margin: 5px 0;
+	background-color: #ddd;
+	padding: 0 15px;
+	border-radius: 7px;
+}
+
+.tools {
+	height: 50px;
+	display: flex;
+	margin-right: -15px;
+}
+
+.toDoList li:hover {
+	background-color: #bbb;
+	transition: 0.3s;
+}
+
+.tools button {
+	height: 100%;
+	border: none;
+	background-color: transparent;
+	padding: 10px;
+}
+
+.complete {
+	color: #0088ff;
+}
+
+.complete:hover,
+.edit:hover,
+.delete:hover {
+	transition: 0.4s;
+	color: white;
+}
+
+.complete:hover {
+	background-color: #0088ff;
+}
+
+.edit {
+	color: #2ed22e;
+	font-weight: 800;
+	letter-spacing: 0.8px;
+}
+
+.edit:hover {
+	background-color: #2ed22e;
+}
+
+.delete {
+	color: #ff0000;
+	border-bottom-right-radius: 7px;
+	border-top-right-radius: 7px;
+}
+
+.delete:hover {
+	background-color: #ff0000;
+}
+
+.popup {
+	display: none;
+	position: fixed;
+	bottom: 0;
+	padding: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+	width: 45em;
+	background-color: #333;
+	color: white;
+	border-radius: 7px;
+}
+
+.popup button {
+	padding: 10px 55px;
+	margin: 20px 50px;
+	border-radius: 7px;
+	border: none;
+}
+
+.popup button:hover {
+	background-color: #d3d3d3;
+}
+
+.edit-input {
+	width: 75%;
+	height: 24px;
+	margin-right: 20px;
+	border-radius: 7px;
+	border: none;
+	padding: 5px 15px;
+}
+
+.error-info {
+	color: royalblue;
+}
+
+h1 {
+	color: white;
+}
+
+.completed {
+	color: #727272;
+	font-style: italic;
+	font-size: 13px;
+	text-decoration: line-through;
+}
